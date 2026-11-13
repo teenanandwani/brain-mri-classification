@@ -1,0 +1,58 @@
+{
+  "sample_count": 51,
+  "accuracy": 0.8823529411764706,
+  "balanced_accuracy": 0.85,
+  "precision_tumor": 0.8378378378378378,
+  "recall_tumor_sensitivity": 1.0,
+  "specificity_no_tumor": 0.7,
+  "f1_tumor": 0.9117647058823529,
+  "roc_auc": 0.8903225806451612,
+  "average_precision": 0.8870817362362827,
+  "majority_class_baseline_accuracy": 0.6078431372549019,
+  "confusion_matrix_no_yes": [
+    [
+      14,
+      6
+    ],
+    [
+      0,
+      31
+    ]
+  ],
+  "classification_report": {
+    "no": {
+      "precision": 1.0,
+      "recall": 0.7,
+      "f1-score": 0.8235294117647058,
+      "support": 20.0
+    },
+    "yes": {
+      "precision": 0.8378378378378378,
+      "recall": 1.0,
+      "f1-score": 0.9117647058823529,
+      "support": 31.0
+    },
+    "accuracy": 0.8823529411764706,
+    "macro avg": {
+      "precision": 0.9189189189189189,
+      "recall": 0.85,
+      "f1-score": 0.8676470588235294,
+      "support": 51.0
+    },
+    "weighted avg": {
+      "precision": 0.9014308426073131,
+      "recall": 0.8823529411764706,
+      "f1-score": 0.8771626297577855,
+      "support": 51.0
+    }
+  },
+  "split": "StratifiedGroupKFold by exact decoded pixel hash, NOT patient",
+  "dataset_images": 253,
+  "duplicate_image_count": 25,
+  "train_images": 151,
+  "validation_images": 51,
+  "test_images": 51,
+  "weights": "imagenet",
+  "seed": 42,
+  "limitations": "Small heterogeneous dataset with no patient identifiers. Exact duplicates grouped, but related scans/near duplicates may remain."
+}

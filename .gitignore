@@ -1,0 +1,19 @@
+# Virtual environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+.env
+
+# Kaggle data, local model checkpoints, detailed predictions and exploratory outputs
+# Never upload images or absolute local filesystem paths.
+data/
+outputs/
+experiments/
+*.keras
+*.h5
+
+# Local notebook runs, if you create any
+.ipython/
